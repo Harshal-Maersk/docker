@@ -1,0 +1,76 @@
+services:
+  db:
+    image: postgres:12
+    container_name: application-db
+    ports:
+      - 5431:5432
+    environment:
+      - POSTGRES_DB=application
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+
+  backend:
+    build:
+      context: ..  
+      dockerfile: docker/Dockerfile
+    container_name: application-demo
+    ports:
+      - 8081:8080
+    environment:
+      - DB_HOST=db
+      - DB_PORT=5432
+      - DB_USERNAME=postgres
+      - DB_PASSWORD=postgres
+    depends_on:
+      - db
+    volumes:
+      - ./logs:/app/logs  # Log directory mounted to container
+
+  grafana:
+    image: grafana/grafana:latest
+    ports:
+      - "3000:3000"
+    depends_on:
+      loki:
+        condition: service_healthy
+
+  loki:
+    image: grafana/loki:latest
+    ports:
+      - "3100:3100"
+    volumes:
+      - ./loki/local-config.yaml:/etc/loki/local-config.yaml  # Map your local config file
+      - /tmp/loki:/loki  # Using /tmp/loki to avoid permission issues
+      - /tmp/loki/index:/loki/index  # Ensure you have correct permissions
+      - /tmp/loki/cache:/loki/cache
+      - /tmp/loki/wal:/wal  # Added WAL directory mount
+    command: 
+      - -config.file=/etc/loki/local-config.yaml
+    user: "10001:10001"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3100/ready"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+
+  promtail:
+    image: grafana/promtail:latest
+    volumes:
+      - ./promtail/promtail-config.yaml:/etc/promtail/promtail-config.yaml  
+      - ./logs:/app/logs  # Log directory matches backend
+    command: 
+      - -config.file=/etc/promtail/promtail-config.yaml
+    depends_on:
+      backend:
+        condition: service_healthy
+      loki:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:9080/ready"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+
+networks:
+  default:
+    driver: bridge

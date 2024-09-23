@@ -1,0 +1,20 @@
+meta {
+  name: Add a product
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{baseurl}}/api/products
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "productName": "Laptop Stand",
+    "color": "Black",
+    "price": 150
+  }
+  
+}

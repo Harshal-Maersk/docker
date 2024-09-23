@@ -1,0 +1,141 @@
+2024-09-18T13:40:01.962Z  INFO 1 --- [docker] [main] c.application.docker.DockerApplication   : Starting DockerApplication v0.0.1-SNAPSHOT using Java 17-ea with PID 1 (/app/app.jar started by root in /app)
+2024-09-18T13:40:01.972Z  INFO 1 --- [docker] [main] c.application.docker.DockerApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-09-18T13:40:06.356Z  INFO 1 --- [docker] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-18T13:40:06.550Z  INFO 1 --- [docker] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 159 ms. Found 1 JPA repository interface.
+2024-09-18T13:40:09.026Z  INFO 1 --- [docker] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-18T13:40:09.093Z  INFO 1 --- [docker] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-18T13:40:09.097Z  INFO 1 --- [docker] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-18T13:40:09.314Z  INFO 1 --- [docker] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-18T13:40:09.320Z  INFO 1 --- [docker] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 7217 ms
+2024-09-18T13:40:10.803Z  INFO 1 --- [docker] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-18T13:40:11.082Z  INFO 1 --- [docker] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-18T13:40:11.187Z  INFO 1 --- [docker] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-18T13:40:12.102Z  INFO 1 --- [docker] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-18T13:40:12.156Z  INFO 1 --- [docker] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-18T13:40:12.441Z  INFO 1 --- [docker] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1dd76982
+2024-09-18T13:40:12.444Z  INFO 1 --- [docker] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-18T13:40:12.568Z  WARN 1 --- [docker] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-09-18T13:40:13.943Z  INFO 1 --- [docker] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-18T13:40:14.052Z  INFO 1 --- [docker] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-18T13:40:15.031Z  INFO 1 --- [docker] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-09-18T13:40:15.475Z  WARN 1 --- [docker] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-18T13:40:18.075Z  INFO 1 --- [docker] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2024-09-18T13:40:18.234Z  INFO 1 --- [docker] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-09-18T13:40:18.266Z  INFO 1 --- [docker] [main] c.application.docker.DockerApplication   : Started DockerApplication in 17.562 seconds (process running for 19.805)
+2024-09-18T14:11:10.822Z  INFO 1 --- [docker] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-18T14:11:10.840Z  INFO 1 --- [docker] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-09-18T14:11:10.850Z  INFO 1 --- [docker] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-09-18T14:11:38.708Z  INFO 1 --- [docker] [main] c.application.docker.DockerApplication   : Starting DockerApplication v0.0.1-SNAPSHOT using Java 17-ea with PID 1 (/app/app.jar started by root in /app)
+2024-09-18T14:11:38.714Z  INFO 1 --- [docker] [main] c.application.docker.DockerApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-09-18T14:11:40.508Z  INFO 1 --- [docker] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-18T14:11:40.560Z  INFO 1 --- [docker] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 43 ms. Found 1 JPA repository interface.
+2024-09-18T14:11:41.330Z  INFO 1 --- [docker] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-18T14:11:41.345Z  INFO 1 --- [docker] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-18T14:11:41.346Z  INFO 1 --- [docker] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-18T14:11:41.407Z  INFO 1 --- [docker] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-18T14:11:41.411Z  INFO 1 --- [docker] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2613 ms
+2024-09-18T14:11:41.803Z  INFO 1 --- [docker] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-18T14:11:41.874Z  INFO 1 --- [docker] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-18T14:11:41.922Z  INFO 1 --- [docker] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-18T14:11:42.230Z  INFO 1 --- [docker] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-18T14:11:42.259Z  INFO 1 --- [docker] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-18T14:11:42.388Z  INFO 1 --- [docker] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@23f8036d
+2024-09-18T14:11:42.391Z  INFO 1 --- [docker] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-18T14:11:42.432Z  WARN 1 --- [docker] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-09-18T14:11:43.231Z  INFO 1 --- [docker] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-18T14:11:43.290Z  INFO 1 --- [docker] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-18T14:11:43.672Z  INFO 1 --- [docker] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-09-18T14:11:43.962Z  WARN 1 --- [docker] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-18T14:11:46.200Z  INFO 1 --- [docker] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2024-09-18T14:11:46.319Z  INFO 1 --- [docker] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-09-18T14:11:46.335Z  INFO 1 --- [docker] [main] c.application.docker.DockerApplication   : Started DockerApplication in 8.322 seconds (process running for 9.036)
+2024-09-18T14:12:30.740Z  INFO 1 --- [docker] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-18T14:12:30.747Z  INFO 1 --- [docker] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-09-18T14:12:30.755Z  INFO 1 --- [docker] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-09-18T14:13:57.341Z  INFO 1 --- [docker] [main] c.application.docker.DockerApplication   : Starting DockerApplication v0.0.1-SNAPSHOT using Java 17-ea with PID 1 (/app/app.jar started by root in /app)
+2024-09-18T14:13:57.346Z  INFO 1 --- [docker] [main] c.application.docker.DockerApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-09-18T14:13:59.044Z  INFO 1 --- [docker] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-18T14:13:59.123Z  INFO 1 --- [docker] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 66 ms. Found 1 JPA repository interface.
+2024-09-18T14:13:59.927Z  INFO 1 --- [docker] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-18T14:13:59.954Z  INFO 1 --- [docker] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-18T14:13:59.955Z  INFO 1 --- [docker] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-18T14:14:00.041Z  INFO 1 --- [docker] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-18T14:14:00.043Z  INFO 1 --- [docker] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2627 ms
+2024-09-18T14:14:00.705Z  INFO 1 --- [docker] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-18T14:14:00.779Z  INFO 1 --- [docker] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-18T14:14:00.828Z  INFO 1 --- [docker] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-18T14:14:01.136Z  INFO 1 --- [docker] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-18T14:14:01.170Z  INFO 1 --- [docker] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-18T14:14:01.296Z  INFO 1 --- [docker] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1e9d7366
+2024-09-18T14:14:01.300Z  INFO 1 --- [docker] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-18T14:14:01.334Z  WARN 1 --- [docker] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-09-18T14:14:02.159Z  INFO 1 --- [docker] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-18T14:14:02.223Z  INFO 1 --- [docker] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-18T14:14:02.689Z  INFO 1 --- [docker] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-09-18T14:14:03.109Z  WARN 1 --- [docker] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-18T14:14:04.698Z  INFO 1 --- [docker] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2024-09-18T14:14:04.807Z  INFO 1 --- [docker] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-09-18T14:14:04.827Z  INFO 1 --- [docker] [main] c.application.docker.DockerApplication   : Started DockerApplication in 8.187 seconds (process running for 9.045)
+2024-09-18T14:18:26.084Z  INFO 1 --- [docker] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-18T14:18:26.091Z  INFO 1 --- [docker] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-09-18T14:18:26.103Z  INFO 1 --- [docker] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-09-18T14:32:15.527Z  INFO 1 --- [docker] [main] c.application.docker.DockerApplication   : Starting DockerApplication v0.0.1-SNAPSHOT using Java 17-ea with PID 1 (/app/app.jar started by root in /app)
+2024-09-18T14:32:15.535Z  INFO 1 --- [docker] [main] c.application.docker.DockerApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-09-18T14:32:17.575Z  INFO 1 --- [docker] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-18T14:32:17.662Z  INFO 1 --- [docker] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 73 ms. Found 1 JPA repository interface.
+2024-09-18T14:32:18.879Z  INFO 1 --- [docker] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-18T14:32:18.906Z  INFO 1 --- [docker] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-18T14:32:18.907Z  INFO 1 --- [docker] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-18T14:32:18.981Z  INFO 1 --- [docker] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-18T14:32:18.983Z  INFO 1 --- [docker] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3364 ms
+2024-09-18T14:32:19.566Z  INFO 1 --- [docker] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-18T14:32:19.636Z  INFO 1 --- [docker] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-18T14:32:19.701Z  INFO 1 --- [docker] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-18T14:32:20.164Z  INFO 1 --- [docker] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-18T14:32:20.206Z  INFO 1 --- [docker] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-18T14:32:20.381Z  INFO 1 --- [docker] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1dd76982
+2024-09-18T14:32:20.383Z  INFO 1 --- [docker] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-18T14:32:20.473Z  WARN 1 --- [docker] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-09-18T14:32:21.491Z  INFO 1 --- [docker] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-18T14:32:21.559Z  INFO 1 --- [docker] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-18T14:32:22.297Z  INFO 1 --- [docker] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-09-18T14:32:22.648Z  WARN 1 --- [docker] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-18T14:32:24.964Z  INFO 1 --- [docker] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2024-09-18T14:32:25.079Z  INFO 1 --- [docker] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-09-18T14:32:25.104Z  INFO 1 --- [docker] [main] c.application.docker.DockerApplication   : Started DockerApplication in 10.454 seconds (process running for 11.295)
+2024-09-18T14:33:04.940Z  INFO 1 --- [docker] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-18T14:33:04.941Z  INFO 1 --- [docker] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-18T14:33:04.945Z  INFO 1 --- [docker] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2024-09-18T14:38:15.751Z  INFO 1 --- [docker] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-18T14:38:15.760Z  INFO 1 --- [docker] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-09-18T14:38:15.772Z  INFO 1 --- [docker] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-09-18T16:28:32.617Z  INFO 1 --- [docker] [main] c.application.docker.DockerApplication   : Starting DockerApplication v0.0.1-SNAPSHOT using Java 17-ea with PID 1 (/app/app.jar started by root in /app)
+2024-09-18T16:28:32.630Z  INFO 1 --- [docker] [main] c.application.docker.DockerApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-09-18T16:28:39.330Z  INFO 1 --- [docker] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-18T16:28:39.569Z  INFO 1 --- [docker] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 193 ms. Found 1 JPA repository interface.
+2024-09-18T16:28:44.221Z  INFO 1 --- [docker] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-18T16:28:44.290Z  INFO 1 --- [docker] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-18T16:28:44.292Z  INFO 1 --- [docker] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-18T16:28:44.465Z  INFO 1 --- [docker] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-18T16:28:44.471Z  INFO 1 --- [docker] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 11701 ms
+2024-09-18T16:28:45.593Z  INFO 1 --- [docker] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-18T16:28:45.774Z  INFO 1 --- [docker] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-18T16:28:45.874Z  INFO 1 --- [docker] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-18T16:28:46.356Z  INFO 1 --- [docker] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-18T16:28:46.402Z  INFO 1 --- [docker] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-18T16:28:46.535Z  INFO 1 --- [docker] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@14ca88bc
+2024-09-18T16:28:46.538Z  INFO 1 --- [docker] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-18T16:28:46.582Z  WARN 1 --- [docker] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-09-18T16:28:47.551Z  INFO 1 --- [docker] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-18T16:28:47.620Z  INFO 1 --- [docker] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-18T16:28:48.116Z  INFO 1 --- [docker] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-09-18T16:28:48.438Z  WARN 1 --- [docker] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-18T16:28:50.919Z  INFO 1 --- [docker] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2024-09-18T16:28:51.102Z  INFO 1 --- [docker] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-09-18T16:28:51.132Z  INFO 1 --- [docker] [main] c.application.docker.DockerApplication   : Started DockerApplication in 19.586 seconds (process running for 21.561)
+2024-09-18T16:30:46.411Z  INFO 1 --- [docker] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-18T16:30:46.413Z  INFO 1 --- [docker] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-18T16:30:46.418Z  INFO 1 --- [docker] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2024-09-18T16:32:36.994Z  INFO 1 --- [docker] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-18T16:32:37.001Z  INFO 1 --- [docker] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-09-18T16:32:37.020Z  INFO 1 --- [docker] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
