@@ -11,11 +11,11 @@ services:
 
   backend:
     build:
-      context: ..  
+      context: ..
       dockerfile: docker/Dockerfile
     container_name: application-demo
     ports:
-      - 8081:8080
+      - 8080:8080  # Expose correct internal port
     environment:
       - DB_HOST=db
       - DB_PORT=5432
@@ -25,6 +25,11 @@ services:
       - db
     volumes:
       - ./logs:/app/logs  # Log directory mounted to container
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080/actuator/health"]  # Updated to match internal port
+      interval: 30s
+      timeout: 10s
+      retries: 5
 
   grafana:
     image: grafana/grafana:latest
